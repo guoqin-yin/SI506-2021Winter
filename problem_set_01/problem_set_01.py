@@ -6,11 +6,11 @@ print('\nProblem 1')
 
 # inaugural poet = 'Amanda Gorman'
 # inaugural_poet = Amanda Gorman
-# inaugural_poet = 'Amanda Gorman'
-# undergraduate_school = 'Harvard University'
+inaugural_poet = 'Amanda Gorman'
+undergraduate_school = 'Harvard University'
 # 'Harvard University' = undergraduate_school
 
-valid_variables = None
+valid_variables = [inaugural_poet, undergraduate_school]
 
 print(f"\nValid = {valid_variables}")
 
@@ -38,9 +38,9 @@ Let the globe, if nothing else, say this is true: that even as we grieved, we gr
 """
 # END PROBLEM 2 SETUP
 
-name_type = None
-age_type = None
-collection_type = None
+name_type = type(name)
+age_type = type(age)
+collection_type = type(work_collection)
 
 print(name_type)
 print(age_type)
@@ -50,8 +50,8 @@ print(collection_type)
 # PROBLEM  3 (20 points)
 print('\nProblem 3')
 
-num_words = None
-avg_words = None
+num_words = len(inaugural_poem.split())
+avg_words = num_words/10
 
 print(f"\nNumber of words = {num_words}")
 print(f"\nAverage number of words per line = {avg_words}")
@@ -60,8 +60,8 @@ print(f"\nAverage number of words per line = {avg_words}")
 # PROBLEM 4 (20 points)
 print('\nProblem 4')
 next_line = "Scripture tells us to envision that everyone shall sit under their own vine and fig tree and no one should make them afraid."
-num_words_next = None
-total_words = None
+num_words_next = len(next_line.split())
+total_words = num_words + num_words_next
 
 
 print(f"\nNew total number of words in inaugural_poem and next_line = {total_words}")
@@ -69,10 +69,10 @@ print(f"\nNew total number of words in inaugural_poem and next_line = {total_wor
 # PROBLEM 5 (20 points)
 print('\nProblem 5')
 
-num_chars_poem = None
+num_chars_poem = len(inaugural_poem)
 
 print(f"\nNumber of characters = {num_chars_poem}")
 
-avg_chars = None
+avg_chars = num_chars_poem // num_words
 
 print(f"\nAverage number of characters per word = {avg_chars}")
